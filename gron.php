@@ -99,7 +99,7 @@ if(!empty($_POST)){
 					type: 'json',
 					data: {
 						command: $('#command').val(),
-						gron_function: $("input[name='gron-function']").val()
+						gron_function: $("input[name='gron-function']:checked").val()
 					},
 					success: function( response ){
 						let data = JSON.parse(response);
